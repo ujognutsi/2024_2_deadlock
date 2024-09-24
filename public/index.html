@@ -1,25 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>DEAD VC.RU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="window.css">
+    <title>Hello World!</title>
   </head>
   <body>
-    <main class="main-content">
-      <div class="feed"></div>
-    </main>
+    <div class="root">
+      <div class="window">
+          <div class="window-header">
+            DEAD-VC
+          </div>
+        
+        <div class="window-body">
+          <div class="element">
+            <div class="login-signup-slider-tab">
+              <a href="/bebebe" id="login" class="tab-active">Вход</a>
+              <a href="/bababa" id="signup" class="tab-unactive">Регистрация</a>
+            </div>
+          </div>
+          <form action="post">
+            <div class="fields">
+                <div class="input">
+                  <div class="input-text">
+                    E-mail
+                  </div>
+                  <div class="input-field">
+                    <input type="email" placeholder="Введите E-mail" class="input-field-default">
+                  </div>
+                </div>
 
-    <script src="/handlebars/dist/handlebars.runtime.js"></script>
-    <script src="./components/Cards/cards.precompiled.js"></script>
-    <script type="module" src="index.js"></script>
+                <div class="input">
+                  <div class="input-text">
+                    Password
+                  </div>
+                  <div class="input-field">
+                    <input type="password" name="" id="" placeholder="Введите пароль" class="input-field-default">
+                  </div>
+                </div>
+                <button type="submit" class="submit-btn">Войти</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
