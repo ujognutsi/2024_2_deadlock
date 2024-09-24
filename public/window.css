@@ -9,16 +9,29 @@ body {
     padding-bottom: 60px;
     padding-left: 120px;
     padding-right: 120px;
-    justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
     margin: auto;
     border: 1px #FFFFFF solid;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 24rem;
+}
+
+.window-header{
+    font-weight: 1000;
+    font-size: 28px;
+    color: #9950F6;
+}
+
+.window, .window-body, .fields{
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+}
+
+.window-body{
+    width: 100%;
 }
 
 .login-signup-slider-tab{
@@ -31,7 +44,6 @@ body {
     width: 192px;
     height: 30px;
     flex: none;
-    order: 1;
     flex-grow: 0;
 }
 
@@ -41,44 +53,38 @@ a{
     text-decoration: none;
 }
 
-.window-header{
-    font-weight: 1000;
-    font-size: 28px;
-    color: #9950F6;
+form{
+    width: 100%;
+}
+
+.input{
+    width: 100%;
 }
 
 .input-field-default{
-    border: 1px solid #D9D9D9;
-    border-radius: 8px;
     color: #B3B3B3;
     height: 40px;
     min-width: 240px;
-    flex-grow: 1;
-    padding-left: 16px;
-    align-items: center;
-    display: flex;
-}
-
-.submit-btn{
-    width: 300px;
+    padding: 0px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 .submit-btn{
     background: #9950F6;
     color: white;
-    border: 1px solid #D9D9D9;
+    border: 0px;
     border-radius: 8px;
     height: 40px;
+    width: 100%;
 }
+
+
 
 .window-body{
     font-size: 16px;
-}
-
-.window, .window-body, .fields{
-    flex-direction: column;
-    display: flex;
-    gap: 16px;
 }
 
 .tab-active{
